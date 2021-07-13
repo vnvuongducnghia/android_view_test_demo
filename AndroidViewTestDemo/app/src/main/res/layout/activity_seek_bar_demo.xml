@@ -55,4 +55,17 @@
             android:layout_weight="1"
             android:text="+" />
     </LinearLayout>
+
+
+    <com.example.androidviewtestdemo.VerticalSeekBar
+        android:id="@+id/audioSeekBar"
+        android:layout_width="60dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:max="100"
+        android:progress="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
