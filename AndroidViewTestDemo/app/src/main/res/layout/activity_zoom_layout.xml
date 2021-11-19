@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZoomLayout">
+
+    <Button
+        android:id="@+id/btntest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"></Button>
+
+    <com.otaliastudios.zoom.ZoomLayout
+        android:id="@+id/myZoomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        app:animationDuration="280"
+        app:flingEnabled="false"
+        app:hasClickableChildren="false"
+        app:maxZoom="2"
+        app:maxZoomType="zoom"
+        app:minZoom="1"
+        app:minZoomType="zoom"
+        app:transformation="centerInside"
+        app:transformationGravity="auto"
+        app:zoomEnabled="false">
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@color/teal_200">
+
+        </View>
+    </com.otaliastudios.zoom.ZoomLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

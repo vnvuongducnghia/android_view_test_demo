@@ -53,6 +53,12 @@ class SeekBarDemo : AppCompatActivity() {
         button_decrease.setOnClickListener { decreateProgress() }
 
         button_increase.setOnClickListener { increateProgress() }
+
+
+        mainVerticalSeekBar.maxValue = 100
+        mainVerticalSeekBar.progress = 20
+
+
     }
 
     private fun decreateProgress() {
